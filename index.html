@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Task</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 id="title">Html forms</h1>
+    <p id="description">This Deployed site consist of a form with requested features</p>
+
+    <form id="form" class="form">
+        <div class="form-group">
+            <label>First Name</label>
+            <input id="first-name"  type="text" placeholder="First-name" required>
+            <label>Last Name</label>
+            <input id="last-name" type="text" placeholder="Last-name" required><br>
+        </div>
+
+        <label class="gender-label">Gender :</label>
+        <input type="radio" id="male-radio" name="gender" value="male"> <label >Male</label> 
+        <input type="radio" id="female-radio" name="gender" value="female"> <label >Female</label>
+        <input type="radio" id="notdisclose-radio" name="gender" value="do not disclose"> <label >Do not disclose</label><br>
+
+        <label>Email</label>
+        <input id="email" type="mail" placeholder="email"><br>
+
+        <div class="form-group">
+            <label>Address</label>
+            <textarea id="address" type="text" placeholder="address" ></textarea>
+            <label>Pincode</label>
+            <input id="pincode" type="text" size="6" placeholder="pincode"  required><br>
+        </section>
+
+        <label class="state-label">State</label>
+        <input type="radio" id="tamil-nadu-state" name="state" value="Tamil Nadu"> <label >Tamil Nade</label> 
+        <input type="radio" id="kerala-state" name="state" value="Kerala"> <label >Kerala</label>
+        <input type="radio" id="karnataka-state" name="state" value="Karnataka"> <label >Karnataka</label><br>
+
+        <button class="btn btn-primary mb-5" id="submit" onclick="updateDetails()" type="submit">SUBMIT</button>
+    </form>
+    <div class="display-table">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
